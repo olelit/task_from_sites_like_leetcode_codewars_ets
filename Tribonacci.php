@@ -1,5 +1,7 @@
 <?php
 
+require_once "helpers/print.php";
+
 function tribonacci($signature, $n)
 {
     if($n === 0)
@@ -15,11 +17,6 @@ function tribonacci($signature, $n)
     }
 
     return $signature;
-}
-
-function c_print(string $val)
-{
-    echo $val.PHP_EOL;
 }
 
 c_print(implode(",", tribonacci([1,1,1],10)));
