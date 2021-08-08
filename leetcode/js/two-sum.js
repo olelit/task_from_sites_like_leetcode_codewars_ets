@@ -22,7 +22,7 @@ var twoSum = function (nums, target) {
 };
 
 //короче и читается лучше, но leetcode считает что это работает медленнее
-var twoSum2 = function (nums, target) {
+const twoSum2 = (nums, target) => {
   for (let i = 0; i < nums.length; i++) {
     let second = target - nums[i];
     let secondIndex = nums.indexOf(second);
