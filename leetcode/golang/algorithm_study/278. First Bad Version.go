@@ -25,5 +25,5 @@ func isBadVersion(i int) bool {
 }
 
 func main() {
-	fmt.Println(isBadVersion(2147483647))
+	fmt.Println(firstBadVersion(2147483647))
 }
